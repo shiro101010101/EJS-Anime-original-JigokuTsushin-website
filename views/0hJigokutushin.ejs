@@ -1,0 +1,32 @@
+<%- include('partials/header'); -%>
+
+
+<script src="./jquery.js" charset="utf-8"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="load2.js" charset="utf-8"></script>
+
+<!--loading-->
+
+  <div id="loader-bg2"  class="is-hide2 ">
+      <div id="loader2" class="is-hide2">
+
+  <h1>呼んだ？</h1>
+  <img src="Jigoku7.png" alt="呼んだ？"> 
+ 
+      </div>
+  </div>
+  <!--contents-->
+
+<% posts.forEach(function(post){ %>
+
+  <div class="h1-2">
+     <h1>怨み聞き届けたり。</h1>
+     <h2><%=post.title%>を地獄へ流します。</h2>
+<% }); %>
+
+</div>
+
+
+ <%   console.log(posts); %>
+
+
